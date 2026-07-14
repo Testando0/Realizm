@@ -18,7 +18,6 @@ export default function StarsCanvas() {
     window.addEventListener('resize', resize);
     resize();
 
-    // Criar estrelas
     const NUM_STARS = 200;
     for (let i = 0; i < NUM_STARS; i++) {
       stars.push({
@@ -69,4 +68,4 @@ export default function StarsCanvas() {
       }}
     />
   );
-}
+            }

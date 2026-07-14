@@ -95,18 +95,13 @@ export default function Home() {
 
   return (
     <>
-      {/* Fundo com estrelas animadas */}
       <StarsCanvas />
-
-      {/* Barra de progresso */}
       <div className="progress-bar" ref={progressRef} />
-
       <div className="container">
         <header className="hero">
           <h1>Universo<br />em Movimento</h1>
           <p>Scrollytelling · Ciência &amp; Descoberta</p>
         </header>
-
         <section className="scrolly-section">
           {stepsData.map((step, index) => (
             <Step
@@ -121,7 +116,6 @@ export default function Home() {
             />
           ))}
         </section>
-
         <footer className="footer">
           <p>Ciência · Scrollytelling cinematográfico</p>
         </footer>

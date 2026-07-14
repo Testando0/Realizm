@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#05080f] text-white antialiased overflow-x-hidden;
+    perspective: 1000px;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[48px] shadow-2xl;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.05);
+  }
+  .hero-glow {
+    @apply bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent;
+    text-shadow: 0 0 40px rgba(139,92,246,0.2);
+  }
+  .typing-cursor {
+    @apply inline-block w-1 h-8 bg-purple-400 ml-1 animate-pulse;
+  }
+}

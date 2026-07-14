@@ -1,4 +1,3 @@
-/* Reset e base */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Barra de progresso fixa no topo */
+/* Barra de progresso */
 .progress-bar {
   position: fixed;
   top: 0;
@@ -31,7 +30,6 @@ body {
   box-shadow: 0 0 20px rgba(167, 139, 250, 0.3);
 }
 
-/* Container principal */
 .container {
   max-width: 560px;
   margin: 0 auto;
@@ -76,7 +74,7 @@ body {
   gap: 70px;
 }
 
-/* Cada step = card com efeito cinematográfico */
+/* Step */
 .step {
   opacity: 0;
   transform: translateY(80px) scale(0.95);
@@ -94,7 +92,6 @@ body {
   transition-delay: 0.1s;
 }
 
-/* Brilho superior esquerdo */
 .step::before {
   content: '';
   position: absolute;
@@ -193,7 +190,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Animações extras */
+/* Animações */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -216,9 +213,8 @@ body {
   .step h2 { font-size: 1.5rem; }
 }
 
-/* Movimento reduzido */
 @media (prefers-reduced-motion: reduce) {
   .step { opacity: 1 !important; transform: none !important; transition: none !important; }
   .step .emoji { animation: none; }
   .hero h1 { animation: none; }
-            }
+}

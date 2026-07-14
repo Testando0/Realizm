@@ -13,5 +13,6 @@ const Step = forwardRef(({ emoji, title, text, tag, highlight, quote }, ref) => 
     </div>
   );
 });
+
 Step.displayName = 'Step';
 export default Step;

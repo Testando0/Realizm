@@ -217,4 +217,4 @@ body {
   .step { opacity: 1 !important; transform: none !important; transition: none !important; }
   .step .emoji { animation: none; }
   .hero h1 { animation: none; }
-}
+  }
